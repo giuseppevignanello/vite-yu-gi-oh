@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <header class="d-flex align-items-center my-4">
+    <header id="app_header" class="d-flex align-items-center py-4">
      <div class="logo mx-3">
        <img src="../assets/img/Yu-Gi-Oh!_(Logo).jpg" alt="">
      </div>

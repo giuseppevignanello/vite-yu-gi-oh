@@ -1,14 +1,38 @@
 @use "../../../node_modules/bootstrap/scss/bootstrap.scss";
-@use "../scss/partials/variables.scss";
+@use "../scss/partials/variables.scss" as *;
 
 img {
     max-width: 100%;
 }
 
+body {
+    background-color: $main;
+}
+
+#app_header {
+    background-color: $light;
+}
 .logo {
     height: 50px;
     img {
         max-height: 100%
+    }
+}
+
+#app_main {
+
+    #card_list{
+        margin-top: 9rem;
+        margin-bottom: 9rem; 
+        padding: 5rem ;
+        background-color: $light;
+
+        #card_item {
+            background-color: $main;
+            margin-left: 2rem; 
+            margin-right: 2rem;
+            margin-bottom: 1rem
+        }
     }
 }
 

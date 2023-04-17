@@ -18,7 +18,7 @@ export default {
 
 </script>
 <template>
-    <main>
+    <main id="app_main">
         <cardList/>
     </main>
 </template>

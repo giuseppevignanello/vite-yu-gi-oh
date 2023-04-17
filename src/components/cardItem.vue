@@ -16,11 +16,10 @@ export default {
 </script>
 
 <template>
-    <div class="col">
-       
+    <div id="card_item" class="col">
         <img :src="card.card_images[0].image_url" alt="">
-        <h2>{{card.name}}</h2>
-       
+        <h4 class="text-white text-center">{{card.name}}</h4>
+        <span class="mt-3 text-center"> {{card.archetype}}</span>
     </div>
 </template>
 
