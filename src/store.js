@@ -4,7 +4,7 @@ import axios from "axios"
 export const store = reactive({
   loading: true, 
   API_URL: "https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Alien", 
-  card: null,
+  cards: null,
   callAPI(url) {
     axios 
       .get(url)
