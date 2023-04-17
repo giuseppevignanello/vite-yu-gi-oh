@@ -6,7 +6,9 @@ export default {
     
 
     return {
-      API_URL: "https://db.ygoprodeck.com/api/v7/cardinfo.php"
+      API_URL: "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=alien", 
+      cards: null, 
+
     }
   },
    methods: {
@@ -14,8 +16,14 @@ export default {
       axios 
         .get(url)
         .then(response => {
-          console.log(response.data);
+          this.cards = response.data
+          console.log(this.cards);
+    
         })
+        .catch(error => {
+                    console.log(err);
+                    console.error(error.message);
+                })
 
     }
    }, 
@@ -31,6 +39,15 @@ export default {
   <div>
     <h1>YugiOh
     </h1>
+  </div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 row-cols-xl-4">
+      <div class="col" v-for="card in cards">
+        <h2> {{card.name}}</h2>
+        <img :src="card.card_image" alt="">
+
+      </div>
+    </div>
   </div>
 </template>
 
