@@ -11,6 +11,7 @@ export const store = reactive({
       .then(response => {
         this.cards = response.data.data
         console.log(this.cards);
+        this.loading = false; 
   
       })
       .catch(error => {
