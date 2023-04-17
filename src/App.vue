@@ -6,7 +6,7 @@ export default {
     
 
     return {
-      API_URL: "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=alien", 
+      API_URL: "https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Alien", 
       cards: null, 
 
     }
