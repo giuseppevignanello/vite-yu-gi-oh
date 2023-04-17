@@ -16,7 +16,7 @@ export default {
       axios 
         .get(url)
         .then(response => {
-          this.cards = response.data
+          this.cards = response.data.data
           console.log(this.cards);
     
         })
@@ -43,9 +43,8 @@ export default {
   <div class="container">
     <div class="row row-cols-1 row-cols-md-3 row-cols-xl-4">
       <div class="col" v-for="card in cards">
-        <h2> {{card.name}}</h2>
-        <img :src="card.card_image" alt="">
-
+        <img :src="card.card_images[0].image_url" alt="">
+        <h2>{{card.name}}</h2>
       </div>
     </div>
   </div>

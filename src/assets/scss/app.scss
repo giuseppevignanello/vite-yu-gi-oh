@@ -1,6 +1,8 @@
 @use "../../../node_modules/bootstrap/scss/bootstrap.scss";
-@use "../partials/variables.scss"
+@use "../scss/partials/variables.scss";
 
-
+img {
+    max-width: 100%;
+}
 
 
