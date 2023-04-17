@@ -9,7 +9,7 @@ export const store = reactive({
     axios 
       .get(url)
       .then(response => {
-        this.cards = response.data
+        this.cards = response.data.data
         console.log(this.cards);
   
       })
@@ -17,6 +17,7 @@ export const store = reactive({
                   console.log(err);
                   console.error(error.message);
               })
+              
 
   }
 })
