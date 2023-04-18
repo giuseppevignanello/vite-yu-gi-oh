@@ -21,6 +21,11 @@ body {
 
 #app_main {
     
+    select {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+    }
 
     #card_list{
         margin-top: 9rem;
@@ -30,17 +35,20 @@ body {
     
 
         #result_banner {
-            margin-left: 4rem; 
-            margin-right: 4rem; 
             height: 80px;
             background-color: $dark;
+        }
+
+        .row {
+            padding-left: 20px;
+            padding-right: 20px
         }
       
         #card_item {
             background-color: $main;
             padding: 1rem;
-            margin-left: 2rem; 
-            margin-right: 2rem;
+            margin-left: -10px; 
+            margin-right: -10px;
             margin-bottom: 1rem
         }
     }
