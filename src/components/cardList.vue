@@ -18,7 +18,7 @@ export default {
         }
     },
     mounted() {
-        store.callAPI(store.API_URL)
+        store.callAPI(store.API_URL + `?num=40&offset=0`)
     }
 }
 </script>

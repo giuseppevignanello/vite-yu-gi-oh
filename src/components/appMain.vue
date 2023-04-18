@@ -6,23 +6,28 @@ import { store } from '../store'
 export default {
     name: "appMain",
     components: {
-        cardList, 
+        cardList,
         selectArchetype
     },
     data() {
         return {
             store
         }
-    },
-
+    }, computed: {
+        changeArchetype() {
+            const url = this.store.API_URL + `?archetype=${this.store.selectValue}`
+            console.log(url);
+            this.store.callAPI(url)
+        }
+    }
+   
 
 }
 
 </script>
 <template>
-    
     <main id="app_main">
-        <selectArchetype/>    
+        <selectArchetype @changeSelect="changeArchetype" />
         <cardList />
     </main>
 </template>

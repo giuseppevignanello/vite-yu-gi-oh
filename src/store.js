@@ -2,8 +2,9 @@ import { reactive } from 'vue'
 import axios from "axios"
 
 export const store = reactive({
+  selectValue: "",
   loading: true, 
-  API_URL: "https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Alien", 
+  API_URL: "https://db.ygoprodeck.com/api/v7/cardinfo.php", 
   cards: null,
   callAPI(url) {
     axios 
@@ -15,7 +16,7 @@ export const store = reactive({
   
       })
       .catch(error => {
-                  console.log(err);
+                  console.log(error);
                   console.error(error.message);
               })
               
