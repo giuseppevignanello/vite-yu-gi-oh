@@ -15,9 +15,7 @@ export default {
 <template>
     <div class="select_archetype container">
             <select class="form-select w-25" aria-label="Default select example" v-model="store.selectValue" @click="$emit('changeSelect')">
-                <option value="Alien">Alien</option>
-                <option value="Noble Knight">Noble Knight</option>
-                <option value="A.I.">A.I.</option>
+                <option v-for="archetype in this.store.archetypes" :value="archetype">{{archetype}}</option>
             </select>
         </div>
 </template>
