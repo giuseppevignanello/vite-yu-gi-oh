@@ -2,10 +2,10 @@
 
 <script>
 import { store } from '../store'
-import selectArchetype from "./selectArchetype.vue"
-import appLoading from './appLoading.vue'
-import resultBanner from './resultBanner.vue'
-import cardItem from "./cardItem.vue"
+import selectArchetype from "./SelectArchetype.vue"
+import appLoading from './AppLoading.vue'
+import resultBanner from './ResultBanner.vue'
+import cardItem from "./CardItem.vue"
 export default {
     name: "cardList",
     components: {

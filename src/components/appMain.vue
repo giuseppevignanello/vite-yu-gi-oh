@@ -1,6 +1,6 @@
 
 <script>
-import cardList from "./cardList.vue"
+import cardList from "./CardList.vue"
 import { store } from '../store'
 export default {
     name: "appMain",
