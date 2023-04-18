@@ -14,7 +14,7 @@ export default {
 
 <template>
     <div id="result_banner" class="d-flex align-items-center">
-        <h4 class="text-white ms-4"> Found <span>39 </span>cards</h4>
+        <h4 class="text-white ms-4"> Found <span> {{this.store.cards.length}} </span> cards</h4>
     </div>
 </template>
 

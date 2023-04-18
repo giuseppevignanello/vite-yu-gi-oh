@@ -20,7 +20,7 @@ export default {
         }
     },
     mounted() {
-        if (this.store.selectValue === "") {
+        if (this.store.selectValue === "Select an Archetype") {
             this.store.callAPI(store.API_URL + `?num=40&offset=0`)
         }
     }, 
